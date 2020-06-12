@@ -19,14 +19,17 @@ Webpage, that takes number from a user and returns a range of numbers from 0 to 
 | Behavior | Input | Output|
 |----------|-------|-------|
 | Takes User input and returns it | Text | Text |
-| Checks if input is Correct (input must be a positive interger number) | text | "Empty or incorrect input, your input should be a positive number" |
+| Checks if number input is Correct (input must be a positive interger number) | text | "Empty or incorrect number input, your input should be a positive number" |
+| Checks if name input is Correct (input fiels can't be empty) | empty name input | "Input the name" |
 | The program returns a range of numbers from 0 to the users inputted number | 4 | "0, 1, 2, 3, 4" |
 | Numbers that contain a 1: all digits are replaced (all digits) with "Beep!" | 1 | "Beep!" |
 | Numbers that contain a 2: all digits are replaced (all digits) with "Boop!" | 2 | "Boop!" |
 | Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?" | 3 | "Won't you be my neighbor?" |
 | Numbers that contain a 3 have the main priority | 13 | "Won't you be my neighbor?" |
 | Numbers that contain a 2 have the second priority | 21 | "Boop!" |
-| User should be able to enter a new number and see new results over and over again. | 5 | "0, "Beep!", "Boop", "Won't you be my neighbor?", 4, 5" |
+| Numbers that are are divisible by 3, add the users input name to the output | 6, "Dana" | "Won't you be my neighbor, Dana?" |
+| User should be able to enter a new number and see new results over and over again | 5 | "0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5" |
+| Reverse button show result in reverse order | 5 | "5, 4, "Won't you be my neighbor?", "Boop!", "Beep!", 0" |
 
 ## Support and contact details
 
