@@ -34,6 +34,7 @@ const replaceNumberToString = function(numberArray){
 
 //user interface logic
 $(document).ready(function(){
+  let arrayResult = [];
   $("form").submit(function(event){
     event.preventDefault();
     $("ol#result").children().remove();
@@ -41,13 +42,22 @@ $(document).ready(function(){
     if(!number || number < 1){
       alert("Empty or incorrect input, your input should be a positive number");
       $("input#number").val("");
+      $(".result").hide();
       return;
     }
-    const arrayResult = replaceNumberToString(convertToArray(number));
+    arrayResult = replaceNumberToString(convertToArray(number));
     arrayResult.forEach(function(element){
       $("ol#result").append("<li>"+element+"</li>")
     });
     $(".result").show();
     $("input#number").val("");
+  });
+  $("#reverse").click(function(){
+    $("ol#result").children().remove();
+    arrayResult.reverse();
+    arrayResult.forEach(function(element){
+      $("ol#result").append("<li>"+element+"</li>")
+    });
+    $(".result").show();
   });
 });
