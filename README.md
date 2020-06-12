@@ -19,7 +19,7 @@ Webpage, that takes number from a user and returns a range of numbers from 0 to 
 | Behavior | Input | Output|
 |----------|-------|-------|
 | Takes User input and returns it | Text | Text |
-| Checks if input is Correct (input must be a positive interger number) | text | "Incorrect input, your input should be a number" |
+| Checks if input is Correct (input must be a positive interger number) | text | "Empty or incorrect input, your input should be a positive number" |
 | The program returns a range of numbers from 0 to the users inputted number | 4 | "0, 1, 2, 3, 4" |
 | Numbers that contain a 1: all digits are replaced (all digits) with "Beep!" | 1 | "Beep!" |
 | Numbers that contain a 2: all digits are replaced (all digits) with "Boop!" | 2 | "Boop!" |
