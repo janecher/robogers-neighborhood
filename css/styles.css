@@ -1,10 +1,23 @@
+.header{
+  padding: 50px;
+  background-image: url("header.jpg");
+  background-size: cover;
+  margin-bottom: 30px;
+}
+
 .result{
   display: none;
-  margin-top: 30px;
+  margin-top: 10px;
+  border-top: 3px solid #DCDCDC;
+  padding: 20px;
+  padding-top: 0px;
 }
 
 .btn{
   margin-bottom: 20px;
+  background-color: #ffccff;
+  font-weight: bold;
+  border: 1px solid #262626;
 }
 
 h3{
