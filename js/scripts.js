@@ -40,7 +40,7 @@ $(document).ready(function(){
   let arrayResult = [];
   $("form").submit(function(event){
     event.preventDefault();
-    $("ul#result").children().remove();
+    $("ol#result").children().remove();
     const number = parseInt($("input#number").val());
     const name = $("input#name").val();
     if(!number || number < 1){
@@ -56,17 +56,17 @@ $(document).ready(function(){
     }
     arrayResult = replaceNumberToString(convertToArray(number), name);
     arrayResult.forEach(function(element){
-      $("ul#result").append("<li>" + element + "</li>");
+      $("ol#result").append("<li> " + element + "</li>");
     });
     $(".result").show();
     $("input#number").val("");
     $("input#name").val("");
   });
   $("#reverse").click(function(){
-    $("ul#result").children().remove();
+    $("ol#result").children().remove();
     arrayResult.reverse();
     arrayResult.forEach(function(element){
-      $("ul#result").append("<li>" + element + "</li>");
+      $("ol#result").append("<li> " + element + "</li>");
     });
   });
 });

@@ -6,7 +6,7 @@
 
 ## Description
 
-Webpage, that takes number from a user and returns a range of numbers from 0 to the user inputted number, but numbers that contains [1, 2, 3] digits are replaced to different words. 
+Webpage, that takes number and name from a user and returns a range of numbers from 0 to the user inputted number, but numbers that contains [1, 2, 3] digits or divisible by 3 are replaced by different words. 
 
 ## Setup/Installation Requirements
 
@@ -18,8 +18,8 @@ Webpage, that takes number from a user and returns a range of numbers from 0 to 
 
 | Behavior | Input | Output|
 |----------|-------|-------|
-| Takes User input and returns it | Text | Text |
-| Checks if number input is Correct (input must be a positive interger number) | text | "Empty or incorrect number input, your input should be a positive number" |
+| Takes user input and returns it | Text | Text |
+| Checks if number input is Correct (input must be a positive interger number) | Text | "Empty or incorrect number input, your input should be a positive number" |
 | Checks if name input is Correct (input fiels can't be empty) | empty name input | "Input the name" |
 | The program returns a range of numbers from 0 to the users inputted number | 4 | "0, 1, 2, 3, 4" |
 | Numbers that contain a 1: all digits are replaced (all digits) with "Beep!" | 1 | "Beep!" |
