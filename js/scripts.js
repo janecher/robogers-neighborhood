@@ -36,7 +36,7 @@ const replaceNumberToString = function(numberArray){
 $(document).ready(function(){
   $("form").submit(function(event){
     event.preventDefault();
-    $("ul#result").children().remove();
+    $("ol#result").children().remove();
     const number = parseInt($("input#number").val());
     if(!number || number < 1){
       alert("Empty or incorrect input, your input should be a positive number");
@@ -45,7 +45,7 @@ $(document).ready(function(){
     }
     const arrayResult = replaceNumberToString(convertToArray(number));
     arrayResult.forEach(function(element){
-      $("ul#result").append("<li>"+element+"</li>")
+      $("ol#result").append("<li>"+element+"</li>")
     });
     $(".result").show();
     $("input#number").val("");
