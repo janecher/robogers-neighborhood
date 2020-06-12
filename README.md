@@ -1,34 +1,40 @@
-# _{Application Name}_
+# Mr. Roboger's Neighborhood
 
-#### _{Brief description of application}, {Date of current version}_
+#### HTML, CSS, JavaScripts files,  06/12/2020
 
 #### By **Evgeniya Chernaya**
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+Webpage, that takes number from a user and returns a range of numbers from 0 to the user inputted number, but numbers that contains [1, 2, 3] digits are replaced to different words. 
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* https://janecher.github.io/robogers-neighborhood/index.html
+* Clone/download repository (click green button "clone or download" and click downlown ZIP or use "git clone https://github.com/janecher/robogers-neighborhood.git" command in your terminal)
+* Open index.html file in the browser
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+## Spec
 
-## Known Bugs
-
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+| Behavior | Input | Output|
+|----------|-------|-------|
+| Takes User input and returns it | Text | Text |
+| Checks if input is Correct (input must be an interger number) | text | "Incorrect input, your input should be a number" |
+| The program returns a range of numbers from 0 to the users inputted number | 4 | "0, 1, 2, 3, 4" |
+| Numbers that contain a 1: all digits are replaced (all digits) with "Beep!" | 1 | "Beep!" |
+| Numbers that contain a 2: all digits are replaced (all digits) with "Boop!" | 2 | "Boop!" |
+| Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?" | 3 | "Won't you be my neighbor?" |
+| Numbers that contain a 3 have the main priority | 13 | "Won't you be my neighbor?" |
+| Numbers that contain a 2 have the second priority | 21 | "Boop!" |
+| User should be able to enter a new number and see new results over and over again. | 5 | "0, "Beep!", "Boop", "Won't you be my neighbor?", 4, 5" |
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+Send me an email: evgenya.chernaya@gmail.com
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+HTML, CSS, JavaScript, Bootstrap, jQuery
 
 ### License
 
