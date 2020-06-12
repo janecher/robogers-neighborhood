@@ -11,10 +11,11 @@ const convertToArray = function(number){
 $(document).ready(function(){
   $("form").submit(function(event){
     event.preventDefault();
+    $("ol#result").children().remove();
     const number = parseInt($("input#number").val());
     if(!number || number < 1){
       alert("Incorrect input, your input should be a positive number");
-      $("input#number").val("")
+      $("input#number").val("");
       return;
     }
     const arrayOfNumbers = convertToArray(number);
@@ -22,5 +23,6 @@ $(document).ready(function(){
       $("ol#result").append("<li>"+element+"</li>")
     });
     $(".result").show();
+    $("input#number").val("");
   });
 });
