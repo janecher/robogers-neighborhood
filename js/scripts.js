@@ -54,7 +54,6 @@ const resultColor = function(number){
 
 }
 
-
 //user interface logic
 $(document).ready(function(){
   let arrayResult = [];
@@ -63,17 +62,6 @@ $(document).ready(function(){
     $("ol#result").children().remove();
     const number = parseInt($("input#number").val());
     const name = $("input#name").val();
-    if(!number || number < 1) {
-      alert("Empty or incorrect number input, your input should be a positive number");
-      $("input#number").val("");
-      $(".result").hide();
-      return;
-    }
-    if(!name) {
-      alert("Input the name");
-      $(".result").hide();
-      return;
-    }
     arrayResult = replaceNumberToString(convertToArray(number), name);
     arrayResult.forEach(function(element){
       $("ol#result").append("<li> " + element + "</li>");
